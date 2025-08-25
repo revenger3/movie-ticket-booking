@@ -1,0 +1,41 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "movieticket-923bd",
+          "appId": "1:204903377132:android:310826b15e8416c61b5dc9",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "movieticket-923bd",
+          "configurations": {
+            "android": "1:204903377132:android:310826b15e8416c61b5dc9",
+            "ios": "1:204903377132:ios:e8f65fcffeeb3e741b5dc9",
+            "macos": "1:204903377132:ios:e8f65fcffeeb3e741b5dc9",
+            "web": "1:204903377132:web:12fb8aca5d6327591b5dc9",
+            "windows": "1:204903377132:web:13904389c48c86601b5dc9"
+          }
+        }
+      }
+    }
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ],
+      "predeploy": [
+        "npm --prefix \"$RESOURCE_DIR\" run lint"
+      ]
+    }
+  ]
+}
